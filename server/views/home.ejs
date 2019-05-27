@@ -6,19 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<%- include('partials/styles.ejs') %>
 	<!-- Ovenstående kode henter indholdet af filen styles.ejs i partials mappen og placere det her -->
-	<%- include('partials/titles.ejs') %>
+	<title><%- include('partials/titles.ejs') %></title>
 </head>
 <body>
-	<header class="header">
-		<p>HER ER HEADEREN</p>
+	<header class="header <%- include('partials/colorClass.ejs') %>">
+		<h1><%- include('partials/titles.ejs') %></h1>
 	</header>
 
 	<nav class="nav">
-		<a href="/">Home Site</a>
-		<a href="/product">Product Site</a>
-		<a href="/contact">Contact Site</a>
+		<%- include('partials/navContent.ejs')%>
 	</nav>
-
 
 	<main class="main">HER ER MAINEN
 		

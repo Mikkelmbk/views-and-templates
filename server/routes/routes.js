@@ -1,7 +1,8 @@
 module.exports = (app) => {
    app.get('/', (req, res, next) => {
       res.render('home', {
-         "title":"Forside"
+         "title":"Forside",
+         "colorClass":"red"
       });
    });
 
@@ -9,6 +10,7 @@ module.exports = (app) => {
    app.get('/product', (req, res, next) => {
       res.render('product', {
          "title":"Produkt",
+         "colorClass":"blue",
          "products":[
             {
                "name":"produkt1",
@@ -25,7 +27,8 @@ module.exports = (app) => {
 
    app.get('/contact', (req, res, next) => {
       res.render('contact', {
-         "title":"Kontakt"
+         "title":"Kontakt",
+         "colorClass":"purple"
       });
    });
 
