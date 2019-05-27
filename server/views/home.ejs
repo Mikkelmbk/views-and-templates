@@ -4,18 +4,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<%- include('partials/styles.ejs') %>
+	<!-- Ovenstående kode henter indholdet af filen styles.ejs i partials mappen og placere det her -->
 	<title>Document</title>
 </head>
 <body>
-	<header class="header"></header>
+	<header class="header">
+		<p>HER ER HEADEREN</p>
+	</header>
 
-	<nav class="nav"></nav>
+	<nav class="nav">
+		<a href="/">Home Site</a>
+		<a href="/product">Product Site</a>
+		<a href="/contact">Contact Site</a>
+	</nav>
 
 
-	<main class="main"></main>
+	<main class="main">HER ER MAINEN
+		
+	</main>
 
 
-	<footer class="footer"></footer>
+	<footer class="footer">HER ER FOOTEREN
+	</footer>
+
+	<%- include('partials/scripts.ejs') %>
+	<!-- Bindestregen efter Procent tegnet betyder "Tag indholdet af filen jeg har nævnt og placer det her" -->
 	
 </body>
 </html>
