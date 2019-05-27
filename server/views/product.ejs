@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<%- include('partials/styles.ejs') %>
-	<title>Document</title>
+	<%- include('partials/titles.ejs') %>
 </head>
 <body>
 	<header class="header">
@@ -19,7 +19,13 @@
 	</nav>
 
 
-	<main class="main">HER ER MAINEN</main>
+	<main class="main">
+		<div class="productContainer">
+			<% products.forEach((product)=>{ %>
+				<h2><%= product.name %></h2>
+			<% }) %>
+		</div>
+	</main>
 
 
 	<footer class="footer">HER ER FOOTEREN
