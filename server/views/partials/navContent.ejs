@@ -1,4 +1,4 @@
-<a class="<%-include('colorClass.ejs')%>" href="/">Home Site</a>
-<a class="<%-include('colorClass.ejs')%>" href="/product">Product Site</a>
-<a class="<%-include('colorClass.ejs')%>" href="/contact">Contact Site</a>
-<a class="<%-include('colorClass.ejs')%>" href="/test">Test</a>
+<a class="<%-include('colorClass.ejs')%> <%= (typeof page != 'undefined' && page == 'home' ? 'active' : '')%>" href="/">Home Site</a>
+<a class="<%-include('colorClass.ejs')%> <%= (typeof page != 'undefined' && page == 'product' ? 'active' : '')%>" href="/product">Product Site</a>
+<a class="<%-include('colorClass.ejs')%> <%= (typeof page != 'undefined' && page == 'contact' ? 'active' : '')%>" href="/contact">Contact Site</a>
+<a class="<%-include('colorClass.ejs')%> <%= (typeof page != 'undefined' && page == 'test' ? 'active' : '')%>" href="/test">Test</a>
