@@ -37,10 +37,10 @@ module.exports = (app) => {
 
 
 
-   // app.get('/test',(req, res, next) => {
-   //     res.send(); // res kan KUN sendes en gang, det er en form for brev der bliver sendt til serveren og den kan kun modtage den en gang
-   //    console.log("hej"); //Denne console.log kan kun ses i terminalen
-   // })
+   app.get('/test',(req, res, next) => {
+       res.send('<h2>Dette er en Test side</h2>'); // res kan KUN sendes en gang, det er en form for brev der bliver sendt til serveren og den kan kun modtage den en gang
+      console.log("hej"); //Denne console.log kan kun ses i terminalen
+   })
 
 
 };
